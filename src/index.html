@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jquery Lection</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">JQ shop</a>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#banner">Banner</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#catalog">Catalog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#form">Form</a>
+        </li>
+      </ul>
+      <div class="drop-down">
+        <img src="./icons/drop-down.svg" alt="drop-down">
+      </div>
+      <div class="drop-down-list">
+        <ul class="list-group">
+          <li class="list-group-item">Sign In</li>
+          <li class="list-group-item">Sign Up</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section id="banner" class="banner">
+    <div class="container">
+      <h2 class="banner__title">Banner</h2>
+      <div class="slider">
+        <img src="https://via.placeholder.com/1100x450" alt="test img">
+      </div>
+    </div>
+  </section>
+  <section id="catalog" class="catalog">
+    <div class="container">
+      <h2>Catalog</h2>
+      <div class="card-list">
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="card1">
+          <div class="card-body">
+            <h5 class="card-title">Card One</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button href="#" class="btn btn-primary">Show details</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="card1">
+          <div class="card-body">
+            <h5 class="card-title">Card Two</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button href="#" class="btn btn-primary">Show details</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="card1">
+          <div class="card-body">
+            <h5 class="card-title">Card Three</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button href="#" class="btn btn-primary">Show details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="form" class="form bg-light">
+    <div class="container">
+      <h2>Form</h2>
+      <form>
+        <div class="form-group">
+          <label for="phone">Your phone</label>
+          <input type="text" class="form-control" id="phone" aria-describedby="nameHelp" placeholder="Enter your phone number">
+          <small id="nameHelp" class="form-text text-muted">We will call you as soon as possible</small>
+        </div>
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Accept privacy policies</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">JQ shop</a>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#banner">Banner</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#catalog">Catalog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#form">Form</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

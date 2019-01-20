@@ -1,0 +1,60 @@
+.header,
+.footer {
+  padding: 20px 0;
+}
+.header .container,
+.footer .container {
+  position: relative;
+  display: flex;
+}
+.nav {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+.drop-down {
+  margin: 0 20px;
+  cursor: pointer;
+  width: 20px;
+  display: flex;
+  align-items: center;
+}
+.drop-down img {
+  transition: all 0.2s ease;
+}
+.drop-down:hover img {
+  transform: scale(1.2);
+}
+.drop-down img {
+  width: 100%;
+}
+.drop-down-list {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+}
+.list-group-item {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.list-group-item:hover {
+  background-color: lightgrey;
+}
+.banner {
+  padding: 40px 0;
+}
+.catalog {
+  padding: 40px 0;
+}
+.card-list {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 30%;
+}
+.form {
+  padding: 40px 0;
+}
+.form-check-input {
+  cursor: pointer;
+}
