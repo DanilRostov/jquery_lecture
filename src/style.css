@@ -1,3 +1,9 @@
+body {
+  width: 100%;
+}
+img {
+  width: 100%;
+}
 .header,
 .footer {
   padding: 20px 0;
@@ -28,6 +34,7 @@
   width: 100%;
 }
 .drop-down-list {
+  display: none;
   position: absolute;
   right: 0;
   bottom: -100px;
@@ -42,6 +49,9 @@
 .banner {
   padding: 40px 0;
 }
+.slider {
+  overflow: hidden;
+}
 .catalog {
   padding: 40px 0;
 }
@@ -51,6 +61,37 @@
 }
 .card {
   width: 30%;
+}
+.card-modal {
+  padding: 40px 60px;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  display: none;
+  z-index: 153;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+.card-modal-container {
+  padding: 40px 60px;
+  overflow: auto;
+  height: 100%;
+  background-color: #fff;
+}
+.card-modal-img-box {
+  width: 45%;
+}
+.card-modal-text {
+  width: 45%;
+}
+.card-modal-body {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.modal-close {
+  margin-top: 20px;
 }
 .form {
   padding: 40px 0;

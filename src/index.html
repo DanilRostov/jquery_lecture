@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Jquery Lection</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,7 +39,17 @@
     <div class="container">
       <h2 class="banner__title">Banner</h2>
       <div class="slider">
-        <img src="https://via.placeholder.com/1100x450" alt="test img">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://via.placeholder.com/1100x450" alt="test img">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://via.placeholder.com/1100x450" alt="test img">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://via.placeholder.com/1100x450" alt="test img">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -51,7 +62,7 @@
           <div class="card-body">
             <h5 class="card-title">Card One</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button href="#" class="btn btn-primary">Show details</button>
+            <button href="#" class="btn btn-primary modal-open">Show details</button>
           </div>
         </div>
         <div class="card">
@@ -59,7 +70,7 @@
           <div class="card-body">
             <h5 class="card-title">Card Two</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button href="#" class="btn btn-primary">Show details</button>
+            <button href="#" class="btn btn-primary modal-open">Show details</button>
           </div>
         </div>
         <div class="card">
@@ -67,7 +78,7 @@
           <div class="card-body">
             <h5 class="card-title">Card Three</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <button href="#" class="btn btn-primary">Show details</button>
+            <button href="#" class="btn btn-primary modal-open">Show details</button>
           </div>
         </div>
       </div>
@@ -79,18 +90,18 @@
       <form>
         <div class="form-group">
           <label for="phone">Your phone</label>
-          <input type="text" class="form-control" id="phone" aria-describedby="nameHelp" placeholder="Enter your phone number">
+          <input type="text" class="form-control form-item" id="phone" aria-describedby="nameHelp" placeholder="Enter your phone number" required>
           <small id="nameHelp" class="form-text text-muted">We will call you as soon as possible</small>
         </div>
         <div class="form-group">
           <label for="name">Your name</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          <input type="text" class="form-control form-item" id="name" placeholder="Enter your name" required>
         </div>
         <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <input type="checkbox" class="form-check-input form-item" id="privacy" required>
           <label class="form-check-label" for="exampleCheck1">Accept privacy policies</label>
         </div>
-        <button type="submit" class="btn btn-primary">Send</button>
+        <button type="submit" class="btn btn-primary send-btn" disabled>Send</button>
       </form>
     </div>
   </section>
@@ -110,5 +121,21 @@
       </ul>
     </div>
   </footer>
+  <div class="card-modal">
+    <div class="card-modal-container">
+      <h2>Card info</h2>
+      <div class="card-modal-body">
+        <div class="card-modal-img-box">
+          <img src="https://via.placeholder.com/300x200" alt="test img">
+        </div>
+        <p class="card-text card-modal-text">Some quick example text to build on the card title and make up the bulk of the
+          card's content.</p>
+      </div>
+      <button class="btn btn-primary modal-close">Close</button>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
